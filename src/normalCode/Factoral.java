@@ -1,3 +1,5 @@
+package normalCode;
+
 import java.util.Scanner;
 
 public class Factoral {
@@ -8,7 +10,7 @@ public class Factoral {
             sum=sum*n;
             n=n-1;
         }
-        System.out.println(sum);
+        System.out.println("Factorial :"+sum);
     }
 
     public static void main(String[] args)

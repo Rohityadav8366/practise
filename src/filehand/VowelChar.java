@@ -1,3 +1,5 @@
+package filehand;
+
 import java.util.Scanner;
 
 public class VowelChar {

@@ -1,3 +1,5 @@
+package normalCode;
+
 import java.util.Scanner;
 
 public class Fabonacci {
