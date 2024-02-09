@@ -7,7 +7,7 @@ public class PrintString {
     {
         System.out.println(str);
         System.out.println("Length of String: "+str.length());
-        System.out.println(str);
+
     }
 
     public static void main(String[] args)
