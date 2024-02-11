@@ -10,8 +10,9 @@ public class Arraylist {
         al1.add(20);
         al1.add(1,34);
         al1.add(32);
+        al1.set(2,500);
         al1.addAll(al2);
-        System.out.println(al1.contains(20));
+        System.out.println(al1.contains(al2));
         System.out.println(al1);
         System.out.println(al2);
     }
