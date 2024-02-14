@@ -12,7 +12,7 @@ public class max {
             int n=sc.nextInt();
             int k=sc.nextInt();
             //  int m=0;
-            for(int i=k;i>n;i--)
+            for(int i=k;i>0;i--)
             {
                 if(n>=k)
                 {
