@@ -1,2 +1,4 @@
-package array;public class MatrixMUL {
+package array;
+
+public class MatrixMUL {
 }
