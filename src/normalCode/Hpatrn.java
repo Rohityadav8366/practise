@@ -8,7 +8,7 @@ public class Hpatrn
         for (i = 1; i <= 7; i++) {
             for (j = 1; j <= 7; j++) {
                 if (j == 1 || j == 7 || (i == 4 && (j >= 2 && j <= 6))) {
-                        System.out.print("# ");
+                        System.out.print("* ");
                 }
                 else {
                         System.out.print("  "); // Adjust spaces as needed
