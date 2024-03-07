@@ -3,13 +3,12 @@ package string;
 import java.util.Scanner;
 
 public class ReverseStr {
-    static void reverse(String str)
+    static void reverse(char[] ch)
     {
-        int j=1;
-        for(int i=str.length()-1;i>=0;i--)
+
+        for(int i=ch.length-1;i>=0;i--)
         {
-            System.out.println(j+" "+str);
-            j++;
+            System.out.println(" "+ch);
         }
     }
 
@@ -17,8 +16,12 @@ public class ReverseStr {
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the String:");
-        String str=sc.nextLine();
-        reverse(str);
+        char[] ch=new char[10];
+        for(int i=0;i<10;i++) {
+            ch[i] = sc.next().charAt(10);
+        }
+
+        reverse(ch);
 
     }
 }
