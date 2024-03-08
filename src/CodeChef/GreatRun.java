@@ -27,7 +27,6 @@ public class GreatRun {
             i=i-k;
             sum=0;
         }
-
         System.out.println(max);
     }
 }
