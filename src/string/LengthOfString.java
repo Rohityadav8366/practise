@@ -12,7 +12,7 @@ public class LengthOfString {
         String str=sc.nextLine();
        // System.out.println(str.length());
 
-        // logic of counting the number of char in the string;
+    //## logic of counting the number of char in the string;
         // and print the CHAR
 
 //        for(i=0;i<str.length();i++)
@@ -22,7 +22,7 @@ public class LengthOfString {
 //        }
 //        System.out.println("\nLength of String "+i);
 
-        // we are going to convert the smaller letter char into Capital letter with both logic;
+    // ## we are going to convert the smaller letter char into Capital letter with both logic;
 
 //        System.out.println(str.toLowerCase(Locale.ROOT));
 //        System.out.println(str.toLowerCase());
@@ -42,12 +42,12 @@ public class LengthOfString {
 //            }
 //        }
 
-    //concatinate two string to each other ;
+    //## concatinate two string to each other ;
 //        System.out.println("Enter the second String ");
 //        String str1=sc.nextLine();
        // System.out.println("Attendent the two String \n"+str+" "+str1);
 
-    // String are compaire to each other;
+    // ## String are compaire to each other;
 //
 //        if(str.equals(str1))
 //        {
@@ -58,7 +58,15 @@ public class LengthOfString {
 //            System.out.println("bot string are not equal");
 //        }
 
-    //
+    //## Take a subString extracting into another String
 
+        System.out.println("Second String");
+        String str1=sc.nextLine();
+        System.out.println("enter the possition");
+        int n=sc.nextInt();
+        System.out.println("add tow String");
+
+            str.charAt()=str1;
+        System.out.println(str);
     }
 }
