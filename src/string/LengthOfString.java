@@ -1,5 +1,6 @@
 package string;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -65,8 +66,15 @@ public class LengthOfString {
         System.out.println("enter the possition");
         int n=sc.nextInt();
         System.out.println("add tow String");
+        byte[] byte1=str.getBytes();
+        byte[] byte2=str1.getBytes();
+        System.out.println(str+"  "+str1);
+        System.out.println(Arrays.toString(byte2));
+        System.out.println(Arrays.toString(byte1));
 
-            str.charAt()=str1;
-        System.out.println(str);
+        //WAP to insert a string in the main string
+
+
+
     }
 }

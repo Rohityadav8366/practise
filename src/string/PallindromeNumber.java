@@ -1,5 +1,6 @@
 package string;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class PallindromeNumber {
@@ -15,10 +16,12 @@ public class PallindromeNumber {
         }
         if(str.equals(str1))
         {
+            System.out.println(str1);
             System.out.println("Pallindrome String");
         }
         else
         {
+            System.out.println(str1 );
             System.out.println("NOT pallindrome String");
         }
     }
