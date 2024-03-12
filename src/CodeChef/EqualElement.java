@@ -14,7 +14,13 @@ public class EqualElement {
             arr[i]=sc.nextInt();
             sum+=arr[i];
         }
-        aver=sum/n;
-       // System.out.println(sum+"  "+aver);
-    }
+        int avr=sum/n;
+        aver=(float)sum/n;
+        if(aver>avr)
+        {
+            int aver1=(int)aver+1;
+            System.out.println(aver1);
+        }
+        System.out.println(sum+"  "+aver);
+     }
 }
