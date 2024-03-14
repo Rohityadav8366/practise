@@ -21,6 +21,7 @@ public class EqualElement {
             int aver1=(int)aver+1;
             System.out.println(aver1);
         }
+        System.out.println("Every thing is done");
         System.out.println(sum+"  "+aver);
      }
 }
