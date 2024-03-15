@@ -13,6 +13,7 @@ public class AddMatrix {
         System.out.println("Enter the element of first matrix:");
         int [][] arr=new int[m][n];
 
+
         for(int i=0;i<m;i++)
         {
             for(int j=0;j<n;j++)
@@ -47,7 +48,15 @@ public class AddMatrix {
             }
             System.out.println();
         }
-
-
+        System.out.println("Add of two Matrix:");
+        for(int i=0;i<m;i++)
+        {
+            for (int j=0;j<n;j++)
+            {
+               int arr3 =arr[i][j]+arr1[i][j];
+                System.out.print(arr3+" ");
+            }
+            System.out.println();
+        }
     }
 }
