@@ -28,9 +28,11 @@ class loginID
 public class Encapsulation {
     public static void main(String[] args) {
         loginID li=new loginID();
-        li.setEmail("rohityadav@123");
+        li.setEmail("rohityadav@1f23");
         li.setPassword(12345);
         System.out.println(li.getEmail());
         System.out.println(li.getPassword());
     }
 }
+
+
