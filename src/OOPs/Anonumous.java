@@ -1,9 +1,9 @@
 package OOPs;
-class A
+abstract class A
 {
-    public void show()
-    {
-        System.out.println("In A show");
+    public abstract void show();
+    public void name(){
+        System.out.println("rohit");
     }
 }
 class B extends A
@@ -17,8 +17,14 @@ class B extends A
 }
 public class Anonumous {
     public static void main(String[] args) {
-        A obj = new B();
+        //Dynamic methode dispatch
+        A obj = new B()
+        {
+            public void show(){
+                System.out.println("Annonumous class");
+            }
+        };
         obj.show();
-        obj.show();
+        obj.name();
     }
 }
