@@ -39,11 +39,11 @@ We can declare the main() method inside the enum.
 package OOPs;
 enum Status
 {
-    Rohit ,kumar,yadav,Raju ,Prachi;
+    Rohit , Kumar, Yadav, Prachi;
 }
 public class Enum {
     public static void main(String[] args) {
-        Status[] s= new Status[]{Status.kumar};
+        Status[] s= new Status[]{};
        for(Status v:Status.values()){
            System.out.println(v+" : "+v.ordinal());
         }
