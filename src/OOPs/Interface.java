@@ -6,6 +6,7 @@ interface Lambda
     void show1(int i,int j);
 }
 public class Interface {
+    // using lambda and ananumous class ;
     public static void main(String[] args) {
         //Ananumous class are define
 //         Lambda obj=new Lambda() {
