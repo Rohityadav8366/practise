@@ -2,7 +2,7 @@ package Stream;
 
 import java.io.FileOutputStream;
 
-public class Demo {
+public class WriteIntoFile {
     public static void main(String[] args)
     {
         try {
@@ -12,7 +12,7 @@ public class Demo {
             WriteINtoFile.write(str.getBytes());
             //Print the char from n to m;
             WriteINtoFile.write(str.getBytes(),5,28);
-            //print the String via char by char 
+            //print the String via char by char
             byte[] b=str.getBytes();
             for(byte x:b)
                 WriteINtoFile.write(x);
