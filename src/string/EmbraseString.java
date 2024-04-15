@@ -7,13 +7,9 @@ public class EmbraseString {
        Scanner sc=new Scanner(System.in);
        String str1=sc.nextLine();
        String str2=sc.nextLine();
-            for(int i=0;i<=n;i++) {
+            for(int i=0;;i++) {
                 str1.charAt(i);
                 str2.charAt(i);
-            }
-            for(int i=0;i<=0;i++)
-            {
-
             }
     }
 }
