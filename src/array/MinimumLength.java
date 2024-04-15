@@ -3,9 +3,10 @@ package array;
 import java.util.Scanner;
 
 public class MinimumLength {
-    public static int minLength(int [] arr,int[] arr1)
+    public static int minLength(int[] arr,int[] arr1)
     {
         int result=0;
+
         return result;
     }
 
@@ -16,6 +17,14 @@ public class MinimumLength {
         System.out.println("Enter the element of array :");
         int[] arr=new int[n];
         int[] arr1=new int[n];
-
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        minLength(arr,arr1);
     }
 }
