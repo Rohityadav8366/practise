@@ -9,7 +9,9 @@ public class MinimumLength {
         int[] subarr=new int[n-1];
         for(int i=0;i< arr.length;i++)
         {
-            subarr[i]=arr[i];
+            if(arr[i]>arr[i+1]) {
+                subarr[i] = arr[i];
+            }
          }
         return result;
     }
