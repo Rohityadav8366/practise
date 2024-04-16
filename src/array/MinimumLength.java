@@ -3,10 +3,14 @@ package array;
 import java.util.Scanner;
 
 public class MinimumLength {
-    public static int minLength(int[] arr,int[] arr1)
+    public static int minLength(int[] arr,int[] arr1,int n)
     {
         int result=0;
-
+        int[] subarr=new int[n-1];
+        for(int i=0;i< arr.length;i++)
+        {
+            subarr[i]=arr[i];
+         }
         return result;
     }
 
@@ -25,6 +29,6 @@ public class MinimumLength {
         {
             arr1[i]=sc.nextInt();
         }
-        minLength(arr,arr1);
+        minLength(arr,arr1,n);
     }
 }
