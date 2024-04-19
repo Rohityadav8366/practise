@@ -15,7 +15,8 @@ public class Kpattern {
                     System.out.print("*");
                 }
                 else{
-                System.out.print(" ");}
+                System.out.print(" ");
+                //just for git commit}
             }
             System.out.println();
         }
