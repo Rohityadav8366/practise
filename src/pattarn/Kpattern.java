@@ -18,7 +18,8 @@ public class Kpattern {
                 System.out.print(" ");
                 //just for git commit
                     //mcdkmcm
-                    }
+                 //bci;uhaejakPasxka
+                }
             }
             System.out.println();
         }
