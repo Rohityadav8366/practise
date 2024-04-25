@@ -99,15 +99,15 @@ public class AtoZ {
 
 
         //C
-//        for (int i =1; i<=5; i++)
+//        for (int i =1; i<=7; i++)
 //        {
 //            for (int j=1;j<m;j++)
 //            {
-//                if((i==1&&j==1)||(i==5&&j==1))
+//                if((i==1&&j==1)||(i==7&&j==1)||(i==7&&j==9)||(i==1&&j==9))
 //                {
 //                    System.out.print(" ");
 //                }
-//                else if(j==1||(i==1)||i==5||i==9)
+//                else if(j==1||(i==1)||i==7||(i==2&&j==9)||(i==6&&j==9))
 //                {
 //                    System.out.print("*");
 //                }
@@ -135,19 +135,59 @@ public class AtoZ {
 //        }
 
         //F
-        for (int i =1; i<m; i++)
+//        for (int i =1; i<m; i++)
+//        {
+//            for (int j=1;j<m;j++)
+//            {
+//                if(j==1||i==1||i==5)
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+       // }
+
+
+        //G
+//        for (int i =1; i<=7; i++)
+//        {
+//            for (int j=1;j<m;j++)
+//            {
+//                if((i==1&&j==1)||(i==7&&j==1)||(i==7&&j==9)||(i==1&&j==9))
+//                {
+//                    System.out.print(" ");
+//                }
+//                else if(j==1||(i==1)||i==7||(i==2&&j==9)||(i==6&&j==9)||(i==5&&(j==8||j==9||j==7)))
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        //H
+        for(int i=1;i<m;i++)
         {
-            for (int j=1;j<m;j++)
+            for(int j=1;j<m;j++)
             {
-                if(j==1||i==1||i==5)
+                if(j==1||j==9||i==5)
                 {
                     System.out.print("*");
                 }
-                else {
+                else
+                {
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
+
         }
 }
