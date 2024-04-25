@@ -190,11 +190,28 @@ public class AtoZ {
 //        }
 
         //I
+//        for(int i=1;i<m;i++)
+//        {
+//            for(int j=1;j<m;j++)
+//            {
+//                if(i==1||i==9||j==5)
+//                {
+//                    System.out.print("*");
+//                }
+//                else
+//                {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+        //J
         for(int i=1;i<m;i++)
         {
             for(int j=1;j<m;j++)
             {
-                if(i==1||i==9||j==5)
+                if(j==5||(j==1&&i==8)||(j==1&&i==7)||(j==2&&i==9)||(j==3&&i==9)||(j==4&&i==9))
                 {
                     System.out.print("*");
                 }
@@ -205,5 +222,7 @@ public class AtoZ {
             }
             System.out.println();
         }
+
+        //K
         }
 }
