@@ -57,15 +57,36 @@ public class A {
 
 
         //B
-        for (int i =1; i<m; i++)
+//        for (int i =1; i<m; i++)
+//        {
+//            for (int j=1;j<m;j++)
+//            {
+//                if((i==1&&j==9)||(i==5&&j==9)||(i==9&&j==9))
+//                {
+//                    System.out.print(" ");
+//                }
+//                else if(j==1||j==9||(i==1)||i==5||i==9)
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        //D
+        for (int i =1; i<=5; i++)
         {
             for (int j=1;j<m;j++)
             {
-                if((i==1&&j==9)||(i==5&&j==9)||(i==9&&j==9))
+                if((i==1&&j==9)||(i==5&&j==9))
                 {
                     System.out.print(" ");
                 }
-                else if(j==1||j==9||(i==1)||i==5||i==9)
+                else if(j==1||j==9||(i==1)||i==5)
                 {
                     System.out.print("*");
                 }
@@ -75,6 +96,5 @@ public class A {
             }
             System.out.println();
         }
-
         }
 }
