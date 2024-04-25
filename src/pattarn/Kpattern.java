@@ -17,7 +17,7 @@ public class Kpattern {
                 else{
                 System.out.print(" ");
                 }
-            }//t
+            }
             System.out.println();
         }
     }
