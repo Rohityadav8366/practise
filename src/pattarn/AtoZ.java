@@ -1,6 +1,6 @@
 package pattarn;
 
-public class A {
+public class AtoZ {
     public static void main(String[] args) {
         int n = 10;
         int m=10;
@@ -99,15 +99,31 @@ public class A {
 
 
         //C
-        for (int i =1; i<=5; i++)
+//        for (int i =1; i<=5; i++)
+//        {
+//            for (int j=1;j<m;j++)
+//            {
+//                if((i==1&&j==1)||(i==5&&j==1))
+//                {
+//                    System.out.print(" ");
+//                }
+//                else if(j==1||(i==1)||i==5||i==9)
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+        //E
+        for (int i =1; i<m; i++)
         {
             for (int j=1;j<m;j++)
             {
-                if((i==1&&j==1)||(i==5&&j==1))
-                {
-                    System.out.print(" ");
-                }
-                else if(j==1||(i==1)||i==5||i==9)
+                 if(j==1||i==1||i==5||i==9)
                 {
                     System.out.print("*");
                 }
