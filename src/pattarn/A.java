@@ -2,12 +2,31 @@ package pattarn;
 
 public class A {
     public static void main(String[] args) {
-        int n=10;
-        for(int i=1;i<n;i++)
+        int n = 10;
+        int m=5;
+        // Squarish A
+//        for(int i=1;i<n;i++)
+//        {
+//            for(int j=1;j<=n;j++)
+//            {
+//                if(i==1||j==1||j==10||i==5)
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+//print   A
+        for (int i =1; i<=m; i++)
         {
-            for(int j=1;j<=n;j++)
+            for (int j=1;j<n;j++)
             {
-                if(i==1||j==1||j==10||i==5)
+                if((i==1&&j==5)||(i==2&&(j==4||j==6))||(i==3&&(j==3||j==4||j==5||j==6||j==7))||(i==4&&(j==2||j==8))||(i==5&&(j==1||j==9)))
                 {
                     System.out.print("*");
                 }
@@ -17,5 +36,22 @@ public class A {
             }
             System.out.println();
         }
+        //Actual V
+//        for (int i = m; i>=1; i--)
+//        {
+//            for (int j=1;j<n;j++)
+//            {
+//                if((i==1&&j==5)||(i==2&&(j==4||j==6))||(i==3&&(j==3||j==7))||(i==4&&(j==2||j==8))||(i==5&&(j==1||j==9)))
+//                {
+//                    System.out.print("*");
+//                }
+//                else {
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
     }
 }
