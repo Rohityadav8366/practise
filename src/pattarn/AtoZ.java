@@ -431,95 +431,128 @@ public class AtoZ {
             System.out.println();
         }
     }
+    public static void exit() {
+        System.out.println("stop operation");
+        System.exit(0);
+    }
     public static void main(String[] args) {
             Scanner sc=new Scanner(System.in);
         System.out.println("which letter Pattarn you want" );
-        String str=sc.next();
+        String str=sc.nextLine();
+        do {
+            switch (str.toUpperCase()) {
+                case "A":
+                    A();
+                    str = sc.next();
+                    break;
+                case "B":
+                    B();
+                    str = sc.next();
+                    break;
+                case "C":
+                    C();
+                    str = sc.next();
+                    break;
+                case "D":
+                    D();
+                    str = sc.next();
+                    break;
+                case "E":
+                    E();
+                    str = sc.next();
+                    break;
+                case "F":
+                    F();
+                    str = sc.next();
+                    break;
+                case "G":
+                    G();
+                    str = sc.next();
+                    break;
+                case "H":
+                    H();
+                    str = sc.next();
+                    break;
+                case "I":
+                    I();
+                    str = sc.next();
+                    break;
+                case "J":
+                    J();
+                    str = sc.next();
+                    break;
+                case "K":
+                    K();
+                    str = sc.next();
+                    break;
+                case "L":
+                    L();
+                    str = sc.next();
+                    break;
+                case "M":
+                    M();
+                    str = sc.next();
+                    break;
+                case "N":
+                    N();
+                    str = sc.next();
+                    break;
+                case "O":
+                    O();
+                    str = sc.next();
+                    break;
+                case "P":
+                    P();
+                    str = sc.next();
+                    break;
+                case "Q":
+                    Q();
+                    str = sc.next();
+                    break;
+                case "R":
+                    R();
+                    str = sc.next();
+                    break;
 
-        switch (str.toUpperCase())
-        {
-            case "A":
-                A();
-                break;
-            case "B":
-                B();
-                break;
-            case "C":
-                C();
-                break;
-            case "D":
-                D();
-                break;
-            case "E":
-                E();
-                break;
-            case "F":
-                F();
-                break;
-            case "G":
-                G();
-                break;
-            case "H":
-                H();
-                break;
-            case "I":
-                I();
-                break;
-            case "J":
-                J();
-                break;
-            case "K":
-                K();
-                break;
-            case "L":
-                L();
-                break;
-            case "M":
-                M();
-                break;
-            case "N":
-                N();
-                break;
-            case "O":
-                O();
-                break;
-            case "P":
-                P();
-                break;
-            case "Q":
-                Q();
-                break;
-            case "R":
-                R();
-                break;
-
-            case "S":
-                S();
-                break;
-            case "T":
-                T();
-                break;
-            case "U":
-                U();
-                break;
-            case "V":
-                V();
-                break;
-            case "W":
-                W();
-                break;
-            case "X":
-                X();
-                break;
-            case "Y":
-                Y();
-                break;
-            case "Z":
-                Z();
-                break;
-            default:
-                System.out.println("please Enter valid Letter :");
-        }
-
+                case "S":
+                    S();
+                    str = sc.next();
+                    break;
+                case "T":
+                    T();
+                    str = sc.next();
+                    break;
+                case "U":
+                    U();
+                    str = sc.next();
+                    break;
+                case "V":
+                    V();
+                    str = sc.next();
+                    break;
+                case "W":
+                    W();
+                    str = sc.next();
+                    break;
+                case "X":
+                    X();
+                    str = sc.next();
+                    break;
+                case "Y":
+                    Y();
+                    str = sc.next();
+                    break;
+                case "Z":
+                    Z();
+                    str = sc.next();
+                    break;
+                case "EXIT":
+                    exit();
+                    break;
+                default:
+                    System.out.println("please Enter valid Letter :");
+                    System.exit(0);
+            }
+        }while(true);
     }
 }
