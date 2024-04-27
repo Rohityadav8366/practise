@@ -18,5 +18,8 @@ public class Arraylist {
         System.out.println(al);
         System.out.println(al1);
         System.out.println(al.indexOf(30));
+        System.out.println(al.set(0,20));
+        al.set(2,80);
+        System.out.println(al);
     }
 }
