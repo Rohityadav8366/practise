@@ -20,6 +20,7 @@ public class Arraylist {
         System.out.println(al.indexOf(30));
         System.out.println(al.set(0,20));
         al.set(2,80);
+        al.add(24);
         System.out.println(al);
     }
 }
