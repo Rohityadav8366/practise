@@ -553,6 +553,6 @@ public class AtoZ {
                     System.out.println("please Enter valid Letter :");
                     System.exit(0);
             }
-        }while(true);
+        }while(true);//rohit just learning
     }
 }
