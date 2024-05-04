@@ -19,7 +19,7 @@ public class EmbraseString {
             }
         }
         System.out.println(dup.toString());
-        if(str2.charAt(dup))
+        if(true)//code error
         {
             System.out.println("yes both are same");
         }

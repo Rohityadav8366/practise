@@ -379,11 +379,14 @@ public class AtoZ {
     }
     public static void X()
     {
-        for (int i=1;i<=10;i++)
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        for (int i=1;i<=n;i++)
         {
-            for(int j=10;j>=1;j--)
+            for(int j=m;j>=1;j--)
             {
-                if(i==j||(i+j)==11)
+                if(i==j||(i+j)==n+m)
                 {
                     System.out.print("*");
                 }
@@ -553,6 +556,6 @@ public class AtoZ {
                     System.out.println("please Enter valid Letter :");
                     System.exit(0);
             }
-        }while(true);//rohit just learning
+        }while(true);//rohit just learningbdfhdufi
     }
 }
