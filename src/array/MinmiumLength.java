@@ -20,6 +20,6 @@ public class MinmiumLength
         {
             B[i]=sc.nextInt();
         }
-           //riuuferhfuiref
+
     }
 }
