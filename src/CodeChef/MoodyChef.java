@@ -21,14 +21,14 @@ public class MoodyChef {
         {
             if(arr[i]>=l&&arr[i]<=r)
             {
-                 mincount+=1;
+                 mincount++;
             }
             else
             {
-                mincount-=1;
-                k=mincount;
+                mincount--;
+
             }
         }
-        System.out.println(mincount+""+k);
+        System.out.println(maxcount+" "+mincount);
     }
 }
