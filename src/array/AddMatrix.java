@@ -46,7 +46,6 @@ public class AddMatrix {
             {
                 System.out.print(arr1[i][j]+" ");
             }
-            System.out.println();
         }
         System.out.println("Add of two Matrix:");
         for(int i=0;i<m;i++)
