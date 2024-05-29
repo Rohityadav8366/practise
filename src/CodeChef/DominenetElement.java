@@ -21,6 +21,5 @@ public class DominenetElement {
                 count++;
             }
         }
-//uhfiusdifug
     }
 }
