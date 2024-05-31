@@ -21,12 +21,10 @@ public class MoodyChef {
         {
             if(arr[i]>=l&&arr[i]<=r)
             {
-               //  mincount++;
                 k++;
             }
             else
             {
-                //mincount--;
                 k--;
 
             }
