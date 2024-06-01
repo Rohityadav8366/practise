@@ -12,18 +12,15 @@ public class NonAdaFlips {
         for(int i=0;i<n;i++)
         {
             str[i]=sc.next();
-            if(str[i].equals('0'))
-            {
-                o++;
-            }
-            else {
-                j++;
-            }
+//            if(str[i].charAt())
+//            {
+//                o++;
+//            }
+//            else {
+//                j++;
+//            }
         }
-        if(j>o) {
-            for (int i = 0; i < str.length; i++) {
 
-            }
-        }
+        
     }
 }
