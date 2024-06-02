@@ -8,9 +8,8 @@ public class DominenetElement {
         System.out.println("Enter the n:");
         int n=sc.nextInt();
         System.out.println("Enter the element of array:");
-        int[] arr1=new int[n];
         int [] arr=new int[n];
-        int count=0;
+        int count=0,max=0,din=0;
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
@@ -23,18 +22,18 @@ public class DominenetElement {
                     count++;
                 }
             }
-            if(count>0){
-             arr1[i]=count;}
+            if(max<count){
+             max=count;} else if (max==count) {
+                din=count;
+            }
             count=0;
         }
-        for(int i=0;i<arr1.length-1;i++){
-            if(arr1[i]>arr1[i+1])
-            {
-                System.out.println("yes");
-            }
-            else {
-                System.out.println("NO");
-            }
+        if(max>din)
+        {
+            System.out.println("YES");
+        }
+        else {
+            System.out.println("NO");
         }
     }
 }
