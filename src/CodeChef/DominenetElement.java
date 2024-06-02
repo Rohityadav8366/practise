@@ -8,17 +8,32 @@ public class DominenetElement {
         System.out.println("Enter the n:");
         int n=sc.nextInt();
         System.out.println("Enter the element of array:");
+        int[] arr1=new int[n];
         int [] arr=new int[n];
         int count=0;
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
         }
-        for(int i=0;i<arr.length-1;i++)
-        {
-            if(arr[i]==arr[i+1])
+        for(int i=0;i<arr.length;i++) {
+            for(int j=i+1;j<arr.length;j++)
             {
-                count++;
+                if(arr[i]==arr[j])
+                {
+                    count++;
+                }
+            }
+            if(count>0){
+             arr1[i]=count;}
+            count=0;
+        }
+        for(int i=0;i<arr1.length-1;i++){
+            if(arr1[i]>arr1[i+1])
+            {
+                System.out.println("yes");
+            }
+            else {
+                System.out.println("NO");
             }
         }
     }
