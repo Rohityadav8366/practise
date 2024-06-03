@@ -20,15 +20,14 @@ public class AirportManagement {
         {
             arrD[i]=sc.nextInt();
         }
-            for(int i=0;i<n-1;i++)
+            for(int i=0;i<n;i++)
             {
-                if(arrA[i]>=arrA[i+1]&&arrD[i]>=arrD[i+1]&&arrD[i]>=arrA[i+1])
-                {
-                    count++;
-                }
-                else if(arrA[i]>=arrA[i+1]&&arrD[i]>=arrD[i+1]||arrD[i]>=arrA[i+1])
-                {
-                    count++;
+                for(int j=0;j<n;j++) {
+                    if (arrA[i] >= arrA[j] && arrD[i] >= arrD[j] && arrD[i] >= arrA[j]) {
+                        count++;
+                    } else if (arrA[i] >= arrA[j] && arrD[i] >= arrD[j] || arrD[i] >= arrA[j]) {
+                        count++;
+                    }
                 }
             }
         System.out.println(count);
