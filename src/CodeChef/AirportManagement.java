@@ -3,6 +3,18 @@ package CodeChef;
 import java.util.Scanner;
 
 public class AirportManagement {
+    static int noOfRunway(int n,int[] arrA,int[] arrD)
+    {
+        int count=1;
+        for(int i=0;i<n-1;i++)
+        {
+         if(arrA[i]==arrA[i+1]&&arrD[i]==arrD[i+1]||arrD[i]==arrA[i+1])
+         {
+             count++;
+         }
+        }
+        return count;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("ENter the no. of Airplanes:");
@@ -20,16 +32,6 @@ public class AirportManagement {
         {
             arrD[i]=sc.nextInt();
         }
-            for(int i=0;i<n;i++)
-            {
-                for(int j=0;j<n;j++) {
-                    if (arrA[i] >= arrA[j] && arrD[i] >= arrD[j] && arrD[i] >= arrA[j]) {
-                        count++;
-                    } else if (arrA[i] >= arrA[j] && arrD[i] >= arrD[j] || arrD[i] >= arrA[j]) {
-                        count++;
-                    }
-                }
-            }
-        System.out.println(count);
+        System.out.println(noOfRunway(n,arrA,arrD));
     }
 }
