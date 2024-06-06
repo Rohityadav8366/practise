@@ -5,13 +5,17 @@ import java.util.Scanner;
 public class AirportManagement {
     static int noOfRunway(int n,int[] arrA,int[] arrD)
     {
-        int count=1;
+        int count=0;
         for(int i=0;i<n-1;i++)
         {
          if(arrA[i]==arrA[i+1]&&arrD[i]==arrD[i+1]||arrD[i]==arrA[i+1])
          {
              count++;
          }
+            if(arrA[i]>=arrA[i+1]&&arrD[i]>=arrD[i+1]||arrD[i]>=arrA[i+1])
+            {
+                count++;
+            }
         }
         return count;
     }
