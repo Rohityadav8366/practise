@@ -37,5 +37,5 @@ public class AirportManagement {
             arrD[i]=sc.nextInt();
         }
         System.out.println(noOfRunway(n,arrA,arrD));
-    }
+    }//jj
 }
