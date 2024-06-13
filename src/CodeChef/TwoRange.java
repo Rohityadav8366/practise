@@ -25,6 +25,6 @@ public class TwoRange {
                     }
                     System.out.println(count);
 
-                // your code goeshe
+
     }
 }
