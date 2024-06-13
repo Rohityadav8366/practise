@@ -18,6 +18,6 @@ public class StrightRate {
                 count++;
             }
         }
-        System.out.println(count);//idihd
+        System.out.println(count);
     }
 }
