@@ -14,7 +14,6 @@ public class TwoSum {
             if(sum==tar)
             {
                 return new int[]{i,j};
-                //hfykdjd
             }
         }
       }
