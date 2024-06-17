@@ -22,7 +22,7 @@ public class Atm {
                 }
                 else{
                     System.out.print("0");
-                    l=l+arr[i];//ggy
+                    l=l+arr[i];
                 }
             }
             else{
