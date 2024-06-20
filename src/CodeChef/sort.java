@@ -22,7 +22,7 @@ public class sort {
 
             }
         }
-        for(int i=0;i<a.length;i++)//vbbvbfv
+        for(int i=0;i<a.length;i++)
         {
             System.out.print(a1[i]+" ");
         }
