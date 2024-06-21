@@ -20,7 +20,7 @@ public class sort {
                     a1[i]=a[j];
                 }
 
-            }//scscsda
+            }
         }
         for(int i=0;i<a.length;i++)
         {
