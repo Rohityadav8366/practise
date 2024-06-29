@@ -35,7 +35,7 @@ public class AddMatrix {
         {
             for(int j=0;j<n;j++)
             {
-                System.out.print(arr[i][j]+" ");//hgcfgc
+                System.out.print(arr[i][j]+" ");
             }
             System.out.println();
         }
