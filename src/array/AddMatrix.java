@@ -55,7 +55,7 @@ public class AddMatrix {
                int arr3 =arr[i][j]+arr1[i][j];
                 System.out.print(arr3+" ");
             }
-            System.out.println();//rht
+            System.out.println();
         }
     }
 }
