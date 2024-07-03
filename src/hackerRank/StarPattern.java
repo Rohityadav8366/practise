@@ -9,7 +9,7 @@ public class StarPattern {
         {
             for(int j=1;j<=10;j++)
             {
-                if(i==3||i-j==2||i+j==13||i==6)
+                if(i==3||i-j==2||i+j==13||i==6)//jgftf
                 {
                     System.out.print("*");
                 }
