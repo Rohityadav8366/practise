@@ -28,7 +28,7 @@ public class StarPattern {
         int m=sc.nextInt();
         int area=n*m;
         int max=0,min=100;
-        for(int i=2;i<=n;i++)
+        for(int i=2;i<=n;i++)//vvjh
         {
             if(area%(i*i)==0)
             {
