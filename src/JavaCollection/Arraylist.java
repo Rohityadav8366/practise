@@ -13,7 +13,7 @@ public class Arraylist {
        arr[0]=2;
        arr[1]=34;
        arr[2]=56;
-       //al.add(0,arr[2]);
+       al.add(0,arr[2]);
        al.addAll(0, Collections.singleton(arr[0]));
         System.out.println(al.stream().count());
         System.out.println(arr[2]);
