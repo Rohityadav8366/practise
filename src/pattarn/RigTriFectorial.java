@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class RigTriFectorial {
     public static void rigTriFecto(int n)
     {
-        int sum=1;
      for(int i=1;i<=n;i++)
      {
          for(int j=1;j<=i;j++)
          {
+             int sum=1;
              int k=j;
              while(k>0) {
-                 sum *= k;
+                  sum =sum* k;
                  k--;
              }
-             System.out.print(sum+"  ");
+             System.out.print(sum+" ");
          }
          System.out.println();
      }
