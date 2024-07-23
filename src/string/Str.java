@@ -8,6 +8,7 @@ public class Str {
         String name2 = new String("rohit");
         if(name==name1){
             System.out.println("both are same");
+            System.out.println("rohit yadav mai ");
         }
         if(name1.equals(name2))
         {
