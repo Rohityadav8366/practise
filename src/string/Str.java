@@ -12,6 +12,7 @@ public class Str {
         }
         if(name1.equals(name2))
         {
+            System.out.println("this is for value comparition");
             System.out.println(" value both are same");
         }
         else {
