@@ -17,7 +17,6 @@ public class Str {
         }
         else {
             System.out.println("both are not same");
-            System.out.println("kkdjc");
         }
     }
 }
