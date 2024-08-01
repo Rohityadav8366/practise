@@ -10,11 +10,10 @@ package OOPs;
         }
     }
     interface Student {
-       abstract int  sum(int x,int y);
-
-        default void fun(){
-            System.out.println("Ram");
-        }
+       abstract  void sum(int x,int y);
+    }
+    interface Animal{
+        void name(String str,int x);
     }
 
     class LambdaExp {
@@ -23,12 +22,20 @@ package OOPs;
             // functional interface. This interface
             // by default implements abstractFun()
             FuncInterface fobj = (int x) -> System.out.println(2 * x);
-            Student student=(int x,int y)->x+y;
+
+            Student student=(int x,int y)-> System.out.println(x+y);
             // This calls above lambda expression and prints 10.
-            System.out.println(student);
+            fobj.normalFun();
             fobj.abstractFun(5);
             student.sum(3,4);
-            fobj.normalFun();
+
+            //Zero Parametrized
+//            Animal animal=()-> System.out.println("Rohit");
+//            animal.name();
+            //one Parametrized
+           Animal animal= (str,x)-> System.out.println();
+         // animal=(String str,int x)-> System.out.println(str);
+            animal.name("rohit",4);
         }
     }
 
