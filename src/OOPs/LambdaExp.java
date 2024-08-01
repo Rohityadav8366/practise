@@ -1,22 +1,25 @@
 package OOPs;
 
-import java.util.Scanner;
+    interface FuncInterface {
+        // An abstract function
+        void abstractFun(int x);
 
-public class LambdaExp {
-    public static void main(String[] args) {
-      // Animal a=(2,){
-
-       // };
-
-
-    }
-}
-class Animal{
-    int age;
-    String name;
-    static void animal(int age,String name){
-        System.out.println();
+        // A non-abstract (or default) function
+        default void normalFun() {
+            System.out.println("Hello");
+        }
     }
 
-}
+    class LambdaExp {
+        public static void main(String args[]) {
+            // lambda expression to implement above
+            // functional interface. This interface
+            // by default implements abstractFun()
+            FuncInterface fobj = (int x) -> System.out.println(2 * x);
+
+            // This calls above lambda expression and prints 10.
+            fobj.abstractFun(5);
+            fobj.normalFun();
+        }
+    }
 
