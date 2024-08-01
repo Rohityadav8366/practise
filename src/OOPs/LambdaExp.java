@@ -9,6 +9,13 @@ package OOPs;
             System.out.println("Hello");
         }
     }
+    interface Student {
+       abstract int  sum(int x,int y);
+
+        default void fun(){
+            System.out.println("Ram");
+        }
+    }
 
     class LambdaExp {
         public static void main(String args[]) {
@@ -16,9 +23,11 @@ package OOPs;
             // functional interface. This interface
             // by default implements abstractFun()
             FuncInterface fobj = (int x) -> System.out.println(2 * x);
-
+            Student student=(int x,int y)->x+y;
             // This calls above lambda expression and prints 10.
+            System.out.println(student);
             fobj.abstractFun(5);
+            student.sum(3,4);
             fobj.normalFun();
         }
     }
