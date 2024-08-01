@@ -9,6 +9,7 @@ public class swape {
         int a= sc.nextInt();
         int b= sc.nextInt();
         System.out.println("Swaped number:");
+        // hgytdursgf
         a=a+b;
         b=a-b;
         a=a-b;
