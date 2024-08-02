@@ -34,7 +34,7 @@ package OOPs;
 //            animal.name();
             //one Parametrized
            Animal animal= (str,x)-> System.out.println();
-         // animal=(String str,int x)-> System.out.println(str);
+          animal=(String str,int x)-> System.out.println(str);
             animal.name("rohit",4);
         }
     }
