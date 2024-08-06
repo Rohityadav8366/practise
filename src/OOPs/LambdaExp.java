@@ -36,6 +36,7 @@ package OOPs;
            Animal animal= (str,x)-> System.out.println();
           animal=(String str,int x)-> System.out.println(str);
             animal.name("rohit",4);
+            //rohit kr yadav
         }
     }
 
