@@ -13,6 +13,6 @@ public class swape {
         b=a-b;
         a=a-b;
         System.out.println(a+"\n"+b);
-        //hucuy
+
     }
 }
