@@ -24,7 +24,7 @@ public class Abstraction {
             void car() {
                 System.out.println(brand);
                 System.out.println(marketPrize);
-                System.out.println(name);
+                System.out.println(name);//kjj
             }
 
             @Override
