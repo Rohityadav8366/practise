@@ -61,4 +61,3 @@ public class Abstraction {
         System.out.println(s2.toString());
         }
     }
-0
