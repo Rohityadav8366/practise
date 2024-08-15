@@ -1,37 +1,64 @@
 package OOPs;
- abstract class Car
-{
-    String brand;
-    int marketPrize;
-    String name;
-    public Car(String name,int marketPrize,String brand){
-        this.name=name;
-        this.brand=brand;
-        this.marketPrize=marketPrize;
+
+abstract class Shape{
+    String color;
+    abstract double area();
+    public abstract String toString();
+    public Shape(String color)
+    {
+        System.out.println("Shape constructor called");
+        this.color=color;
+    }
+    public String getColor(){
+        return color;
+    }
+}
+class Circle extends Shape{
+    double radius;
+    public Circle(String color,double radius){
+        super(color);
+        System.out.println("Circle constructor called");
+        this.radius=radius;
     }
 
-     abstract void car();
-     abstract String BuyCar();
-     static  void carBrand(String brand,int marketPrize,String name){
-         System.out.println("Brand->"+brand+" marketPrize->"+marketPrize+" Name->"+name);
-     }
+    @Override
+    double area() {
+        return  Math.PI*Math.pow(radius,2);
+    }
 
+    @Override
+    public String toString() {
+        return  "Circle color is " + super.getColor()
+                + "and area is : " + area();
+    }
+}
+class Rectangle extends Shape{
+    double length;
+    double width;
+    public Rectangle(String color,double length,double width)
+    {
+        super(color);
+        System.out.println("Rectangle constructor called !");
+        this.length=length;
+        this.width=width;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle color is "+super.getColor()+"and area is :"+area();
+    }
+
+    @Override
+    double area() {
+        return length*width;
+    }
 }
 public class Abstraction {
     public static void main(String[] args) {
-        Car c=new Car("Oodi123",123,"Oodi") {
-            @Override
-            void car() {
-                System.out.println(brand);
-                System.out.println(marketPrize);
-                System.out.println(name);//rohit kr
-            }
-
-            @Override
-            String BuyCar() {
-                return "";
-            }
-        };
-        c.carBrand("OOdi123",3400000,"Oodi");
+        Shape s1=new Circle("red",2.3);
+        Shape s2=new Rectangle("Yellow",2,5);
+        System.out.println(s1.toString());
+        System.out.println(s2.toString());
+        }
     }
-}
+0

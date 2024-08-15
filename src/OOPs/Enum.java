@@ -39,7 +39,7 @@ We can declare the main() method inside the enum.
 package OOPs;
 enum Status
 {
-    Rohit , Kumar, Yadav, Prachi;
+    Rohit , Kumar, Yadav;
 }
 public class Enum {
     public static void main(String[] args) {
