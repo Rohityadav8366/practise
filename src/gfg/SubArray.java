@@ -44,6 +44,6 @@ public class SubArray {
         {
             arr[i]=sc.nextInt();
         }
-        subarraySum(arr,n,s);//bsddw
+        subarraySum(arr,n,s);
     }
 }
