@@ -35,7 +35,7 @@ public class SubArray {
     }
 
     public static void main(String[] args) {
-//;igyuu
+
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int s=sc.nextInt();
