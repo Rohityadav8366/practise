@@ -25,7 +25,7 @@ public class SubArray {
                 sum = 0;
                 i = start;
                 start = 0;
-
+//n,hlnhln
             }
             else {
                 System.out.println("-1");
