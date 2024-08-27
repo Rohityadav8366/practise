@@ -26,7 +26,7 @@ public class SubArray {
                 i = start;
                 start = 0;
             }
-            else {//vgdfgdfousax
+            else {
                 System.out.println("-1");
                 System.exit(0);
             }
