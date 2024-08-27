@@ -23,7 +23,7 @@ public class SubArray {
             }
             if (sum > s) {
                 sum = 0;
-                i = start;//hvygy
+                i = start;
                 start = 0;
             }
             else {
