@@ -9,7 +9,7 @@ public class Zero {
         int n=sc.nextInt();
        // System.out.println("Enter the sring");
         String str=sc.nextLine();
-        str.length();
+        str.length();//oijoij
 
     }
 }
