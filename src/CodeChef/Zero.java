@@ -10,6 +10,7 @@ public class Zero {
        // System.out.println("Enter the sring");
         String str=sc.nextLine();
         str.length();
+        System.out.println(str.length());
 
     }
 }
