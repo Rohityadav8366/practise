@@ -40,7 +40,7 @@ public class Patarn {
                 else{
                     System.out.print("  ");
                 }
-                //System.out.print("* ");
+
             }
             System.out.println();
         }
