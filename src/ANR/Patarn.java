@@ -40,7 +40,7 @@ public class Patarn {
                 else{
                     System.out.print("  ");
                 }
-
+                System.out.println("rohit");
             }
             System.out.println();
         }
