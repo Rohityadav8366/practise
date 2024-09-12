@@ -45,8 +45,17 @@ public class Patarn {
             System.out.println();
         }
     }
+    public static void swap(){
+        int a=9;
+        int b=8;
+        a=a^b;
+        b=b^a;
+        a=a^b;
+        System.out.println(a+" "+b);
+    }
     public static void main(String arg[]) {
      // squire();
         triangle1();
+        swap();
     }
 }
