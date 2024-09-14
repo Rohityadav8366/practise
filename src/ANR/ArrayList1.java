@@ -4,12 +4,17 @@ import java.util.*;
 
 public class ArrayList1 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-
         List<Integer> a1= new ArrayList<>();
-            a1.add(1);
-            a1.add(2);
-            a1.add(3);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the n");
+        int n=sc.nextInt();
+        System.out.println("Enter "+n+" number");
+        for(int i=0;i<n;i++)
+        {
+            int num=sc.nextInt();
+            a1.add(num);
+            //fd
+        }
             for(int a:a1)
             {
                 System.out.print(a+" ");
