@@ -13,7 +13,7 @@ public class ArrayList1 {
         {
             int num=sc.nextInt();
             a1.add(num);
-            //fd
+
         }
             for(int a:a1)
             {
