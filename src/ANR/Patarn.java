@@ -54,8 +54,8 @@ public class Patarn {
         System.out.println(a+" "+b);
     }
     public static void main(String arg[]) {
-     // squire();
-        triangle1();
+      squire();
+        triangle();
         swap();
     }
 }

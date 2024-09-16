@@ -62,22 +62,18 @@ public class Program {
         }
         System.out.println(facto);
     }
+//Prime number
     public static void prime(int n){
-        int count=0;
+        int count=1;
 
-        for(int i=1;i<n/2;i++)
+        for(int i=1;i<=n/2;i++)
         {
-           if(i%2==1){
                if(n%i==0)
                {
                    count++;
                }
-           }
         }
-        if(n==2){
-            System.out.println("prime");
-        }
-        else if(count<0)
+        if(count==2)
         {
             System.out.println("prime");
         }
@@ -85,11 +81,26 @@ public class Program {
             System.out.println("Composite");
         }
     }
+
+//Prime number between n and m
+public static void primeNo(int n,int m){
+    int count=1;
+while(n<=m) {
+    for (int i = 1; i <= n / 2; i++) {
+        if (n % i == 0) {
+            count++;
+        }
+    }
+    if (count == 2) {
+        System.out.println();
+    }
+}
+}
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the n");
         int n=sc.nextInt();
-        //int m=sc.nextInt();
-        prime(n);
+        int m=sc.nextInt();
+        primeNo(n,m);
     }
 }
