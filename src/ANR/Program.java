@@ -83,24 +83,55 @@ public class Program {
     }
 
 //Prime number between n and m
-public static void primeNo(int n,int m){
-    int count=1;
-while(n<=m) {
-    for (int i = 1; i <= n / 2; i++) {
+    public static void primeNo(int n,int m){
+
+        while(n<=m) {
+        int count=1;
+         for (int i = 1; i <= n / 2; i++) {
         if (n % i == 0) {
             count++;
+             }
+         }
+        if (count == 2) {
+        System.out.print(n+"  ");
+        }
+        n++;
+}
+}
+//fabonici series
+    public static void fabonicci(int n)
+    {
+        int a=0,b=1;
+        System.out.print(a+" ,"+b);
+        while(n-->0)
+        {
+            int c=a+b;
+            System.out.print(" ,"+c);
+            a=b;
+            b=c;
         }
     }
-    if (count == 2) {
-        System.out.println();
+//pellondrom Number
+    public static void pallindrom(int n){
+        int s=n,pel = 0;
+        while(n>0){
+            int sum=n%10;
+             pel=(pel*10)+sum;
+            n=n/10;
+        }
+        System.out.println(pel);
+        if(s==pel){
+            System.out.println("Pellindrome");
+        }
+        else {
+            System.out.println("Not Pellindrome");
+        }
     }
-}
-}
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the n");
         int n=sc.nextInt();
-        int m=sc.nextInt();
-        primeNo(n,m);
+        //int m=sc.nextInt();
+        fabonicci(n);
     }
 }
