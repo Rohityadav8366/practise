@@ -1,6 +1,8 @@
 package ANR;
 
-import java.util.Scanner;
+import string.LengthOfString;
+
+import java.util.*;
 
 public class Program {
 //sum of n no.
@@ -127,11 +129,57 @@ public class Program {
             System.out.println("Not Pellindrome");
         }
     }
+//Armstrong number
+    public static void armstrong(int n)
+    {
+
+       int m=0,s=n;
+       while(n>0){
+           n=n/10;
+           m++;
+       }
+       int sum=0;
+       n=s;
+       while(s>0){
+           int v=s%10;
+            sum= (int) (sum+Math.pow(v,m));
+            s=s/10;
+       }
+        System.out.println(sum);
+       if(n==sum){
+           System.out.println("Arsmtrong no.");
+       }
+       else {
+           System.out.println("Not Armstrong no.");
+       }
+    }
+//To make pallendrome number by given number
+    public static void toPellindrome(int n)
+    {
+        List list=new ArrayList<>();
+        int m=0,s=n;
+        while(n>0){
+            n=n/10;
+            m++;
+        }
+        int [] arr=new int[m];
+        n=s;
+            for(int i=0;i<m;i++){
+                int v=n%10;
+                arr[i]=v;
+                n=n/10;
+            }
+        for(int i:arr){
+            System.out.print(i+" ");
+        }
+
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the n");
         int n=sc.nextInt();
         //int m=sc.nextInt();
-        fabonicci(n);
+        toPellindrome(n);
     }
 }
