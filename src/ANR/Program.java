@@ -174,12 +174,40 @@ public class Program {
         }
 
     }
-
+//Interview Question
+    public static int majorityElement(final int[] A) {
+    int n=A.length;
+    int a=0,count=0,b=0;
+    for(int i=0;i<A.length-1;i++)
+    {
+        for(int j=i+1;j<A.length;j++)
+        {
+            if(A[i]==A[j]){
+                count++;
+            }
+        }
+        if(a<count)
+        {
+            a=count;
+            b=A[i];
+        }
+        count=0;
+    }
+    if(a>=n/2){
+         return b;
+    }
+    return b;
+}
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the n");
         int n=sc.nextInt();
         //int m=sc.nextInt();
-        toPellindrome(n);
+        int[] A=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            A[i]=sc.nextInt();
+        }
+        System.out.println(majorityElement(A));
     }
 }
