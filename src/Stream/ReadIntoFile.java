@@ -4,6 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 
 public class ReadIntoFile {
+    public ReadIntoFile(String filePath) {
+    }
+
     public static void main(String[] args)
     {try {
         FileReader r=new FileReader("D:\\java pro\\practice\\src\\Stream\\Stream.txt");

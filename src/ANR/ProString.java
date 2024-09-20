@@ -1,5 +1,11 @@
 package ANR;
 
+import Stream.ReadIntoFile;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class ProString {
@@ -21,22 +27,37 @@ public class ProString {
 //Pallindrom string
     public static void pallindrome(String str)
     {
-        char[] chArr=new char[str.length()];
-        char ch = 0;
-        for(int i=str.length()-1;i>=0;i--)
-        {
-              ch =str.charAt(i);
+       StringBuilder sb=new StringBuilder(str);
+       String rev= String.valueOf(sb.reverse());
+        if(rev.equals(str)){
+            System.out.println("Pallindrom");
         }
-        for(int i=0;i<str.length();i++){
-            chArr[i]=ch;
+        else {
+            System.out.println("Not Pallindrome");
         }
-        System.out.println(str);
-        System.out.println(chArr);
+    }
+//NO.Of unique word in HashMap
+    public static void noOfUnique(int k,String str){
+        HashMap hs=new HashMap();
+
+    }
+
+    public static void file(){
+            String filePath="filedatabase.txt";
+
+        try(BufferedReader br=new BufferedReader(new FileReader(filePath))){
+            String line;
+            while((line=br.readLine())!=null){
+                System.out.println(line);
+            }
+        }catch(IOException e){
+            System.out.println("An error occured");
+        }
     }
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
-        pallindrome(str);
+       file();
     }
 }
