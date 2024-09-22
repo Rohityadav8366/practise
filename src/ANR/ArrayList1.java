@@ -17,11 +17,12 @@ public class ArrayList1 {
             list.add(d);
         }
         Collections.sort(list);
-        System.out.println(list);
+        System.out.println("Sorted Array"+list);
+        int index=0;
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<m;j++) {
-                matrix[i][j]=list.get(i);
+                matrix[i][j]=list.get(index++);
             }
         }
         int sum=0;
@@ -46,7 +47,18 @@ public class ArrayList1 {
 
 
     }
+    public static void patt1() {
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < i * 2; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 6 - i; j > 0; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
+    }
 
     public static void main(String[] args) {
 //        List<Integer> a1= new ArrayList<>();
@@ -65,6 +77,6 @@ public class ArrayList1 {
 //                System.out.print(a+" ");
 //            }
 
-        dynamicMatrix();
+        patt1();
     }
 }
