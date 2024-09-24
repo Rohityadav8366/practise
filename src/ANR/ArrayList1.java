@@ -36,7 +36,7 @@ public class ArrayList1 {
             }
         }
         System.out.println("Sum of Diagonal of matrix "+sum);
-        System.out.println("Entered element ");
+        System.out.println("Entered element !");
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<m;j++) {
@@ -59,6 +59,7 @@ public class ArrayList1 {
         }
 
     }
+
 
     public static void main(String[] args) {
 //        List<Integer> a1= new ArrayList<>();
