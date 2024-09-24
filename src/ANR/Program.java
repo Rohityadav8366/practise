@@ -156,7 +156,7 @@ public class Program {
 //To make pallendrome number by given number
     public static void toPellindrome(int n)
     {
-        List list=new ArrayList<>();
+        //List list=new ArrayList<>();
         int m=0,s=n;
         while(n>0){
             n=n/10;

@@ -61,12 +61,30 @@ public class ArrayList1 {
     }
 
     public static void arrayPallindrom() {
-        int[] arr = {1,2,3,2,1};
-        int[] arr1= new int[5];
-        int s=arr.length-1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of array m :");
+        int m=sc.nextInt();
+        System.out.println("Enter the element of array: ");
+        int[] arr = new int[m];
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+       // int[] arr1= new int[5];
+        int a=arr.length-1;
+        int n=0;
+        int s=0;
         for(int i=arr.length-1;i>=0;i--) {
-            arr1[s-i]=arr[i];
+            //arr1[s-i]=arr[i];
+            n=(n*10)+arr[i];
+            s=(s*10)+arr[a-i];
+        }
 
+        System.out.println(n);
+        System.out.println(s);
+        if(s==n){
+            System.out.println("Pallindrome");
+        }else{
+            System.out.println("not pallindrome");
         }
     }
 
