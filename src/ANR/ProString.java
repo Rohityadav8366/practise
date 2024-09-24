@@ -24,16 +24,16 @@ public class ProString {
             System.out.println(stringBuilder.reverse());
 
         }
-//Pallindrom string
-    public static void pallindrome(String str)
+//Palindrome string
+    public static void palindrome(String str)
     {
        StringBuilder sb=new StringBuilder(str);
        String rev= String.valueOf(sb.reverse());
         if(rev.equals(str)){
-            System.out.println("Pallindrom");
+            System.out.println("Palindrome");
         }
         else {
-            System.out.println("Not Pallindrome");
+            System.out.println("Not Palindrome");
         }
     }
 //NO.Of unique word in HashMap
@@ -55,9 +55,27 @@ public class ProString {
         }
     }
 
+    public static void toCheckPalindrome(){
+            Scanner sc=new Scanner(System.in);
+            String str=sc.nextLine();
+            StringBuffer str1=new StringBuffer();
+            for(int i=str.length()-1;i>=0;i--){
+                char ch=str.charAt(i);
+                str1.append(ch);
+            }
+            String s= String.valueOf(str1);
+            if(str.equals(s)){
+                System.out.println("palindrome");
+            }else{
+                System.out.println("not palindrome");
+            }
+
+    }
+
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-       file();
+      //  String str=sc.nextLine();
+       toCheckPalindrome();
     }
 }

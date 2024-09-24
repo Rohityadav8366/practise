@@ -147,7 +147,7 @@ public class Program {
        }
         System.out.println(sum);
        if(n==sum){
-           System.out.println("Arsmtrong no.");
+           System.out.println("Armstrong no.");
        }
        else {
            System.out.println("Not Armstrong no.");
