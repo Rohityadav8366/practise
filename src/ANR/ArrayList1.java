@@ -60,6 +60,16 @@ public class ArrayList1 {
 
     }
 
+    public static void arrayPallindrom() {
+        int[] arr = {1,2,3,2,1};
+        int[] arr1= new int[5];
+        int s=arr.length-1;
+        for(int i=arr.length-1;i>=0;i--) {
+            arr1[s-i]=arr[i];
+
+        }
+    }
+
 
     public static void main(String[] args) {
 //        List<Integer> a1= new ArrayList<>();
@@ -78,6 +88,6 @@ public class ArrayList1 {
 //                System.out.print(a+" ");
 //            }
 
-        patt1();
+        arrayPallindrom();
     }
 }
