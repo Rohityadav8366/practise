@@ -16,8 +16,8 @@ public class ProString {
             StringBuffer sb=new StringBuffer(str);
             StringBuilder stringBuilder=new StringBuilder(str);
             for (int i = str.length() - 1; i >= 0; i--) {
-//                System.out.print(chArr[i]);
-//                System.out.print(str.charAt(i));
+                System.out.print(chArr[i]);
+                System.out.print(str.charAt(i));
             }
             System.out.println(sb.reverse());
 
