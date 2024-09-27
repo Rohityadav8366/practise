@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ProString {
@@ -37,9 +38,14 @@ public class ProString {
         }
     }
 //NO.Of unique word in HashMap
-    public static void noOfUnique(int k,String str){
-        HashMap hs=new HashMap();
-
+    public static void noOfUnique(){
+            Scanner sc=new Scanner(System.in);
+            String str=sc.nextLine();
+            Map<String,Integer> hs=new HashMap<>();
+            for(int i=0;i<str.length();i++){
+                char ch=str.charAt(i);
+                hs.keySet().add(String.valueOf(ch));
+            }
     }
 
     public static void file(){
