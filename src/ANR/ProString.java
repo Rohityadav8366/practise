@@ -44,8 +44,11 @@ public class ProString {
             Map<String,Integer> hs=new HashMap<>();
             for(int i=0;i<str.length();i++){
                 char ch=str.charAt(i);
-                hs.keySet().add(String.valueOf(ch));
+                int value=0;
+                System.out.println();
+
             }
+        System.out.println(hs);
     }
 
     public static void file(){
@@ -82,6 +85,6 @@ public class ProString {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
       //  String str=sc.nextLine();
-       toCheckPalindrome();
+       noOfUnique();
     }
 }
