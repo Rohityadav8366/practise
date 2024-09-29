@@ -86,6 +86,17 @@ public class ArrayList1 {
         }
     }
 
+    public static void list(){
+
+        List<Integer> list1=new ArrayList<>();
+        list1.add(3);
+        list1.add(14);
+        list1.add(16);
+        
+
+    }
+
+
     public static void main(String[] args) {
 //        List<Integer> a1= new ArrayList<>();
 //        Scanner sc=new Scanner(System.in);
@@ -104,7 +115,7 @@ public class ArrayList1 {
 //            }
 //
 //;
-
+list();
 
     }
 }

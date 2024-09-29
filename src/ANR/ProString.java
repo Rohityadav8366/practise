@@ -82,9 +82,38 @@ public class ProString {
     }
 
 
+    public static void topalindrome() {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int a=str.length()/2;
+        int pair=0,count=0,roh=0;
+        for(int i=0;i<str.length();i++) {
+            char ch=str.charAt(i);
+            for(int j=i;j<str.length();j++) {
+                char chh=str.charAt(j);
+                if(ch==chh) {
+                    count++;
+                    if(count%2==0) {
+                        pair++;
+                    }
+                    else if(count%2==1&&count>=3){
+                        roh++;
+                    }
+                }
+            }
+            count=0;
+        }
+        if(pair==a&&roh<2) {
+            System.out.println("It is possible to make palindrome");
+        }else {
+            System.out.println("it is not possible to make palindrome");
+        }
+
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
       //  String str=sc.nextLine();
-       noOfUnique();
+       topalindrome();
     }
 }
