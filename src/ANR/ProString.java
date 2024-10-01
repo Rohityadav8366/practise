@@ -110,10 +110,25 @@ public class ProString {
         }
 
     }
+    public static void lar(){
+            int a=100;
+            int b=23;
+            int c=400;
+            if(a>b){
+                if(a>c){
+                    System.out.println("A >c,b");
+                }
+            } else if (b>c) {
+                System.out.println("b >a,c");
+            }
+            else{
+                System.out.println("c >a,b");
+            }
+    }
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-      //  String str=sc.nextLine();
-       topalindrome();
+      //  String str=sc.nextLine()
+        lar();
     }
 }
