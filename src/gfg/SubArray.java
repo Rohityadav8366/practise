@@ -1,46 +1,34 @@
 package gfg;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class SubArray {
     public static void subarraySum(int[] arr, int n, int s)
     {
-        while(true) {
-            int sum = 0;
-            int start = 0;
-            int i;
-            for ( i = 0; i < n; i++) {
-                if (sum == 0) {
-                    start = i + 1;
-                }
-                sum = sum + arr[i];
-                if (sum == s) {
-                    System.out.println(start + "," + i);
-                }
-            }
-            if (sum > s) {
-                sum = 0;
-                i = start;
-                start = 0;
-            }
-            else {
-                System.out.println("-1");
-                System.exit(0);
-            }
+        int sum=0;
+//      for(int i=0;i<n;i++){
+//          for(int j=i+1;j<n;j++){
+//              sum=arr[i]+arr[j];
+//              if(s==sum) {
+//                  System.out.println(i + "," + j);
+//              }
+//          }
+        for(int i=0;i<n;i++) {
+            sum+=arr[i];
         }
-    }
+      }
+
 
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
+        System.out.println("Entre the N:");
         int n=sc.nextInt();
+        System.out.println("Entre the s:");
         int s=sc.nextInt();
+        System.out.println("Entre the element:");
         int[] arr=new int[n];
-        for(int i=0;i<n;i++)
-        {
+        for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
         subarraySum(arr,n,s);
