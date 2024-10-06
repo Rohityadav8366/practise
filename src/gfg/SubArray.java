@@ -18,6 +18,10 @@ public class SubArray {
         }
       }
 
+      public static void stockBuyAndShell(){
+
+      }
+
 
     public static void main(String[] args) {
 
