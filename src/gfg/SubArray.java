@@ -19,7 +19,7 @@ public class SubArray {
       }
 
       public static void stockBuyAndShell(){
-
+          System.out.println("gfegfi");
       }
 
 
