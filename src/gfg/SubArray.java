@@ -44,7 +44,7 @@ public class SubArray {
                 max=pro;
             }
         }
-          System.out.println("Maximum profit is "+max);
+          System.out.println("Maximum profit is "+max);//hkuhh
       }
 
 
