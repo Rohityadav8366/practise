@@ -17,7 +17,7 @@ public class SubArray {
             sum+=arr[i];
         }
       }
-
+//nvj
       public static void stockBuyAndShell(){
         Scanner sc=new Scanner(System.in);
           System.out.println("Enter the size of array:");
