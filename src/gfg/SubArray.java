@@ -17,7 +17,7 @@ public class SubArray {
             sum+=arr[i];
         }
       }
-//nvj
+
       public static void stockBuyAndShell(){
         Scanner sc=new Scanner(System.in);
           System.out.println("Enter the size of array:");
@@ -46,7 +46,7 @@ public class SubArray {
         }
           System.out.println("Maximum profit is "+max);
       }
-
+//jhxhjshx
 
     public static void main(String[] args) {
 
