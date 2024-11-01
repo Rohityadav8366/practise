@@ -1,4 +1,5 @@
 package gfg;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -46,8 +47,24 @@ public class SubArray {
         }
           System.out.println("Maximum profit is "+max);
       }
-      public static void missing(){
+      public static void missingNumber(){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+          int min=0,max=0;
+          System.out.println("Enter the element of array");
+           int[] arr=new int[n];
+           for(int i=0;i<n;i++){
+               arr[i]=sc.nextInt();
+               max=Arrays.stream(arr).max().getAsInt();
+               min=Arrays.stream(arr).min().getAsInt();
+           }
 
+          Arrays.sort(arr);
+           while(min<=max){
+               if(true){
+                   System.out.println("null");
+               }
+           }
       }
 
     public static void main(String[] args) {
