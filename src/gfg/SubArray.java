@@ -60,7 +60,7 @@ public class SubArray {
            }
 
           Arrays.sort(arr);
-           while(min<=max){
+           while(min<=max){//jhh
                if(min>max){
                    System.out.println("null");
                }
