@@ -7,8 +7,23 @@ public class StringLe {
     public static void reverseString(){
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
-        StringBuffer str1=new StringBuffer(str);
-        System.out.println(str1.reverse());
+        String[] str2=new String[5];
+        StringBuffer str1=new StringBuffer();
+        for(int i=0;i< str.length();i++){
+            char ch=str.charAt(i);
+            if(!(ch==' ')){
+                str1.append(ch);
+            }
+            else{
+                while(){
+                    str2[j]= String.valueOf(str1);
+                }
+                str1.
+            }
+        }
+        for(String x:str2){
+            System.out.println(x);
+        }
     }
 
     public static void main(String[] args) {
