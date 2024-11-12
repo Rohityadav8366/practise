@@ -15,15 +15,21 @@ public class StringLe {
                 str1.append(ch);
             }
             else{
-                while(){
-                    str2[j]= String.valueOf(str1);
-                }
-                str1.
+//                while(){
+//                    str2[j]= String.valueOf(str1);
+//                }
+//                str1.
             }
         }
         for(String x:str2){
             System.out.println(x);
         }
+    }
+
+    public static void prime(){
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+
     }
 
     public static void main(String[] args) {
