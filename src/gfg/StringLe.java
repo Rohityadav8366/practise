@@ -69,9 +69,10 @@ public class StringLe {
         for(int i=0;i<n;i++){
             list.add(sc.nextInt());
         }
-        for(int x:list){
-            System.out.print(x+", ");
-        }
+        System.out.println(list.get(0));
+//        for(int x:list){
+//            System.out.println(list.get(0));
+//        }
     }
 
     public static void main(String[] args) {
