@@ -1,5 +1,7 @@
 package gfg;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class StringLe {
@@ -7,22 +9,22 @@ public class StringLe {
     public static void reverseString(){
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
-        String[] str2=new String[5];
+        String[] str2=new String[3];
         StringBuffer str1=new StringBuffer();
+        int temp=0;
         for(int i=0;i< str.length();i++){
             char ch=str.charAt(i);
             if(!(ch==' ')){
                 str1.append(ch);
             }
             else{
-//                while(){
-//                    str2[j]= String.valueOf(str1);
-//                }
-//                str1.
+                str2[temp]=String.valueOf(str1);
+                str1.setLength(0);
+                temp++;
             }
         }
-        for(String x:str2){
-            System.out.println(x);
+        for(int i= str2.length-1;i>=0;i--){
+            System.out.print(str2[i]+" ");
         }
     }
 
@@ -45,8 +47,37 @@ public class StringLe {
             }
         }
     }
+
+    public static void reverse(){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int rev=0;
+        while(n>0){
+            int v=n%10;
+            rev=(rev*10)+v;
+            n=n/10;
+        }
+        System.out.println(rev);
+    }
+
+    public static void list(){
+        Scanner sc=new Scanner(System.in);
+        List<Integer> list=new ArrayList<>();
+        System.out.println("Enter the size of list");
+        int n=sc.nextInt();
+        System.out.println("Enter the element of list ");
+        for(int i=0;i<n;i++){
+            list.add(sc.nextInt());
+        }
+        for(int x:list){
+            System.out.print(x+", ");
+        }
+    }
+
     public static void main(String[] args) {
-       // reverseString();
-        prime();
+        //reverseString();
+       // prime();
+       // reverse();
+        list();
     }
 }
