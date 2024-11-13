@@ -70,9 +70,9 @@ public class StringLe {
             list.add(sc.nextInt());
         }
         System.out.println(list.get(0));
-//        for(int x:list){
-//            System.out.println(list.get(0));
-//        }
+        for(int x:list){
+            System.out.println(list.get(0));
+        }
     }
 
     public static void main(String[] args) {
