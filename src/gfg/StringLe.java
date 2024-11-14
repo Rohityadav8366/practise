@@ -77,7 +77,7 @@ public class StringLe {
 
     public static void main(String[] args) {
         //reverseString();
-       // prime();
+        // prime();
        //reverse();
         list();
     }
