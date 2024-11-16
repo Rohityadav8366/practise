@@ -75,10 +75,27 @@ public class StringLe {
         }
     }
 
+    public static void primeNo() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int count = 0,max=0;
+        while (n-- <= m) {
+            for (int i = 2; i <= n / 2; i++) {
+                if (n % i == 0) {
+                    count=1;
+                    break;
+                }
+            }
+            if(count==0){
+                max=n;
+            }
+        }
+    }
     public static void main(String[] args) {
         //reverseString();
         // prime();
-       reverse();
+       //reverse();
         list();
     }
 }
