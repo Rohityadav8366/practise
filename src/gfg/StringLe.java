@@ -80,22 +80,45 @@ public class StringLe {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int count = 0,max=0;
-        while (n-- <= m) {
-            for (int i = 2; i <= n / 2; i++) {
-                if (n % i == 0) {
-                    count=1;
+
+        //moving forword from n++
+//        while (n <= m) {
+//            for (int i = 2; i <= n / 2; i++) {
+//                if (n % i == 0) {
+//                    count=1;
+//                    break;
+//                }
+//            }
+//            if(count==0){
+//                max=n;
+//            }
+//            n++;
+//            count=0;
+//        }
+//        System.out.println(max);
+
+        //reverse from max
+        while(m>=n){
+            for(int i=2;i<=m/2;i++) {
+                if (m % i == 0) {
+                    count = 1;
                     break;
                 }
             }
             if(count==0){
-                max=n;
+                max=m;
+                break;
             }
+            m--;
+            count=0;
         }
+        System.out.println(max);
     }
+
     public static void main(String[] args) {
         //reverseString();
-        // prime();
+        primeNo();
        //reverse();
-        list();
+        //list();
     }
 }
