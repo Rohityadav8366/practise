@@ -20,7 +20,13 @@ public class maxSum {
     }
 
     public static void minJumps(int[] arr){
-
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[0]==0){
+                System.out.println("gfg man stop there : -1");
+                break;
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
