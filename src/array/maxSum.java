@@ -19,13 +19,24 @@ public class maxSum {
         System.out.println(sum);
     }
 
-    public static void minJumps(int[] arr){
-        int count=0;
-        for(int i=0;i<arr.length;i++){
-            if(arr[0]==0){
-                System.out.println("gfg man stop there : -1");
-                break;
+    public static void minJumps(int[] arr)
+    {int count = 0;
+        try {
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[0] == 0) {
+                    System.out.println("gfg man stop there : -1");
+                    break;
+                } else {
+                    while (arr[i] <= arr.length) {
+                        count++;
+                        int a = arr[i];
+                        i = i + a;
+                    }
+                    break;
+                }
             }
+        }catch (Exception e){
+            System.out.println(count);
         }
     }
     public static void main(String[] args) {
@@ -37,6 +48,7 @@ public class maxSum {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        MaxSum(arr);
+       // MaxSum(arr);
+        minJumps(arr);
     }
 }
