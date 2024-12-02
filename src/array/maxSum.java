@@ -14,7 +14,7 @@ public class maxSum {
                 continue;
             } else{
                 sum=sum+arr[i];
-            }//mkjin
+            }
         }
         System.out.println(sum);
     }
