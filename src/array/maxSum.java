@@ -9,7 +9,7 @@ public class maxSum {
         Arrays.sort(arr);
         for(int i=0;i<arr.length;i++){
             if(arr[i]<0){
-                continue;
+                //continue;
             } else if (i==0) {
                 continue;
             } else{
