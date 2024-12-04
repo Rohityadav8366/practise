@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class maxSum {
     public static void MaxSum(int[] arr){
-        int sum=0;
+        int sum=0;//ilkl
         Arrays.sort(arr);
         for(int i=0;i<arr.length;i++){
             if(arr[i]<0){
