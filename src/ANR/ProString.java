@@ -88,7 +88,7 @@ public class ProString {
         int a=str.length()/2;
         int pair=0,count=0,roh=0;
         for(int i=0;i<str.length();i++) {
-            char ch=str.charAt(i);
+
             for(int j=i;j<str.length();j++) {
                 char chh=str.charAt(j);
                 if(ch==chh) {
@@ -125,7 +125,9 @@ public class ProString {
                 System.out.println("c >a,b");
             }
     }
+    public static void removeDublicacy(){
 
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
       //  String str=sc.nextLine()
