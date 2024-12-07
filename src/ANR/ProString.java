@@ -5,9 +5,7 @@ import Stream.ReadIntoFile;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class ProString {
 
@@ -91,6 +89,7 @@ public class ProString {
 
             for(int j=i;j<str.length();j++) {
                 char chh=str.charAt(j);
+                char ch = 0;
                 if(ch==chh) {
                     count++;
                     if(count%2==0) {
@@ -126,11 +125,18 @@ public class ProString {
             }
     }
     public static void removeDublicacy(){
-
+        int [] arr={1,2,2,3,3,3};
+        List list=new Vector();
+        for(int i=0;i< arr.length;i++){
+            if(arr[i]!=arr[i-1]){
+                list.add(arr[i]);
+            }
+        }
+        System.out.println(list);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
       //  String str=sc.nextLine()
-        lar();
+        removeDublicacy();
     }
 }
