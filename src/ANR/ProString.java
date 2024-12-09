@@ -126,9 +126,9 @@ public class ProString {
     }
     public static void removeDublicacy(){
         int [] arr={1,2,2,3,3,3};
-        List list=new Vector();
+        List list=new ArrayList();
         for(int i=0;i< arr.length;i++){
-            if(arr[i]!=arr[i-1]){
+            if(arr[i]!=arr[i+1]){
                 list.add(arr[i]);
             }
         }
