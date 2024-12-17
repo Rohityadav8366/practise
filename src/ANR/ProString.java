@@ -114,7 +114,7 @@ public class ProString {
             int b=23;
             int c=400;
             if(a>b){
-                if(a>c){
+                if(a<c){
                     System.out.println("A >c,b");
                 }
             } else if (b>c) {
