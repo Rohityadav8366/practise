@@ -117,11 +117,6 @@ public class ProString {
                 if(true){
                     System.out.println("A >c,b");
                 }
-            } else if (b>c) {
-                System.out.println("b >a,c");
-            }
-            else{
-                System.out.println("c >a,b");
             }
     }
     public static void removeDublicacy(){
