@@ -26,6 +26,7 @@ public class CheckPalindrome {
 //        } else {
 //            System.out.println("Palindrome");
 //        }
+
         int s=0,c=0;
         for(int i= arr.length-1;i>=0;i--){
             s=(s*10)+arr[i];
