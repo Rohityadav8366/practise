@@ -26,7 +26,7 @@ public class maxSum {
                 if (arr[0] == 0) {
                     System.out.println("gfg man stop there : -1");
                     break;
-
+//jfkdsfjk
                 } else {
                     while (arr[i] <= arr.length) {
                         count++;
