@@ -25,7 +25,7 @@ public class maxSum {
             for (int i = 0; i < arr.length; i++) {
                 if (arr[0] == 0) {
                     System.out.println("gfg man stop there : -1");
-                    break;
+                    break;//ko
                 } else {
                     while (arr[i] <= arr.length) {
                         count++;
